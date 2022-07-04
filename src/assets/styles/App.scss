@@ -1,0 +1,171 @@
+.App {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button-primary {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 180px;
+    height: 64px;   
+    
+    /* color/dark */
+    border: 0px;
+    background: #232340;
+    border-radius: 8px;
+
+    &:hover {
+        background: #3a3a64;
+        cursor: pointer;
+    }
+    .Recent-Works {
+        font-weight: bold;
+        font-size: 1.8rem;
+        height: 24px;
+        left: 24.44%;
+        right: 24.44%;
+        top: calc(50% - 24px/2);
+        color: #FFFFFF;
+    }
+}
+
+.Header {
+    width: 100%;
+    height: var(--heightHeader);
+    left: 0px;
+    top: 0px;
+    background-image: url('../images/HeaderBg.svg');
+    
+    .Navigation {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 64px 72px 0px;
+
+        .Nav__logo {
+            padding: 12px 0px;
+        }
+
+        .Nav__menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            width: 392px;
+            height: 24px;
+            padding: 0;
+            margin: 0;
+            font-style: normal;
+            font-weight: 600;
+    
+            .Nav__menu-item {   
+                list-style: none;
+                left: 876px;
+                top: 84px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .Nav__menu-item:first-child {
+                color: #5468E7;
+            }
+            
+        }
+        .Nav__notify {
+            position: absolute;
+            left: 63%;
+            top: 74px;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            color: var(--white);
+            background: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
+        }
+        
+    }
+
+    .Header__Container {
+        position: relative;
+        margin: 94px 135px; 
+        max-height: 100%;
+        display: flex;
+
+        .Header__HeroImg {
+            position: absolute;
+            top: 10%;
+            right: 0;
+            height: auto;
+            width: auto;
+        }
+        .Header__HeroBG {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: auto;
+            width: auto;
+            
+        }
+        .Header__HeroContent {
+            width: 467px;
+            height: 548px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            .Header__HeroContent__main {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .Header__HeroContent__title {
+                    height: 300px;
+                    margin: 0;
+                    text-align: start;
+                    font-weight: 700;
+                    font-size: 84px;
+                    line-height: 100px;
+                    letter-spacing: -1px;
+                    color: #232340;
+                }
+                .Header__HeroContent__content {
+                    width: 367px;
+                    text-align: start;
+                    font-weight: 400;
+                    margin: 40px 0;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #606060;
+                }
+            }
+            .button-primary {
+                background: #5468E7;
+                &:hover {
+                    background: #7483e5;
+                    cursor: pointer;
+                }
+            }
+        }
+        .Header__ScrollDownIcon {
+            position: absolute;
+            bottom: calc(-90px * 2);
+            left: 0;
+            height: auto;
+            width: auto;
+            vertical-align: bottom;
+            object-fit: cover;
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 16px;
+            }
+        }
+    }
+
+}
