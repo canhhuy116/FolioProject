@@ -15,8 +15,8 @@ function App() {
             <li className="Nav__menu-item">Work</li>
             <li className="Nav__menu-item">Services</li>
             <li className="Nav__menu-item">Jobs</li>
+            <span className="Nav__notify">2</span>
           </ul>
-          <span className="Nav__notify">2</span>
           <button className="button-primary">
             <span className="Recent-Works">Contact Us</span>
           </button>
