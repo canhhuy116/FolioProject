@@ -7,6 +7,8 @@
     --heightHeader: 1024px;
     --heightWhoWeAre: 1710px;
     --distancePrimary: 13.5rem;
+    --black: #000;
+    --heightServices: 2124px;
 }
 
 * {
@@ -27,4 +29,9 @@ body {
     text-rendering: optimizeSpeed;
     text-align: center;
 }
-                
+
+.grid {
+    width: 1170px;
+    max-width: 100%;
+    margin:0 auto;
+}

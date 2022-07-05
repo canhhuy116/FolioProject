@@ -7,14 +7,13 @@
 .button-primary {
     width: 18rem;
     height: 6.4rem;   
-    
     /* color/dark */
     border: 0px;
-    background: #232340;
+    background: #5468E7;
     border-radius: 8px;
 
     &:hover {
-        background: #3a3a64;
+        background: #7483e5;
         cursor: pointer;
     }
     .Recent-Works {
@@ -23,6 +22,60 @@
         left: 24.44%;
         right: 24.44%;
         color: #FFFFFF;
+    }
+}
+
+.Headline {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12.8rem;
+    .Headline__logo {
+        width: auto;
+        height: auto;
+        top: 0;
+        left: 0;
+        align-self: flex-start;
+    }
+    .Headline__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .Headline__content__tagline {
+            font-weight: 600;
+            line-height: 2.4rem;
+            font-style: normal;
+            margin-bottom: 2.4rem;
+            .taglineContent {
+                color: #FFFFFF;
+                margin-left: 2.4rem;
+            }
+        }
+        .Headline__content__para {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 72px;
+            /* or 112% */
+            margin: 0;
+            letter-spacing: -0.5px;
+            
+            /* color/white */
+            
+            color: #FFFFFF;
+            width: 66rem;
+            text-align: left;
+        }
+    }
+    .Headline__Arrow {
+        margin-top: 5.4rem;
+        img {
+            width: auto;
+            height: auto;
+            top: 0;
+            left: 0;
+        }
     }
 }
 
@@ -77,28 +130,34 @@
                 background: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
             }
         }
-        
+        .button-primary {
+            background: #232340;
+            &:hover {
+                background: #3a3a64;
+                cursor: pointer;
+            }
+        }
     }
 
     .Header__Container {
         position: relative;
-        padding: 94px 135px; 
+        margin-top: 94px; 
         height: 100%;
         display: flex;
 
         .Header__HeroImg {
             position: absolute;
-            top: 15.5rem;
-            right: calc(var(--distancePrimary) - 2.5rem);
-            width: 64%;
-            height: 64%;
+            top: 4rem;
+            right: -2.5rem;
+            width: auto;
+            height: auto; 
         }
         .Header__HeroBG {
             position: absolute;
-            top: 9.4rem;
-            right: var(--distancePrimary);
-            width: 40%;
-            height: 70%; 
+            top: 0;
+            right: 0;
+            width: auto;
+            height: auto; 
         }
         .Header__HeroContent {
             width: 467px;
@@ -133,18 +192,11 @@
                     color: #606060;
                 }
             }
-            .button-primary {
-                background: #5468E7;
-                &:hover {
-                    background: #7483e5;
-                    cursor: pointer;
-                }
-            }
         }
         .Header__ScrollDownIcon {
             position: absolute;
-            top: 75%;
-            left: var(--distancePrimary);
+            bottom: -32%;
+            left: 0 ;
             height: auto;
             width: auto;
             vertical-align: bottom;
@@ -157,4 +209,156 @@
         }
     }
 
+}
+
+.WhoWeAre {
+    position: relative;
+    width: 100%;
+    height: var(--heightWhoWeAre);
+    background: #232340;
+    background-image: url('../images/line.svg');
+    background-repeat: no-repeat;
+
+    .WhoWeAre__shape3d {
+        width: 100%;
+        height: 100%;
+        .shape3dIMG {
+            position: absolute;
+            top: -4rem;
+            right: 0;
+        }
+        .grid {
+            position: relative;
+        }
+        .WhoWeAre__body {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 9.4rem;
+            .WhoWeAre__body__timeLine {
+                margin: 0;
+                margin-bottom: 6rem;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+    
+                .TimeLineCurrentYear {
+                    position: relative;
+                    color: var(--white);
+                    &:after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: -8.5rem;
+                        width: 24px;
+                        height: 4px;
+                        background: var(--white);
+                        margin-top: 7px;
+                    }
+                    &:before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 7rem;
+                        width: 200px;
+                        height: 16px;
+                        z-index: 1;
+                        background: url('../images/pointLine.svg');
+                    }
+                }
+            }
+            .WhoWeAre__body__img {
+                img {
+                    position: relative;
+                    width: auto;
+                    height: auto;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .WhoWeAre__footer {
+        display: flex;
+        justify-content: space-between;
+        .WhoWeAre__footer__content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding-left: 20rem;
+            padding-right: 2rem;
+            .WhoWeAre__footer__content__main {
+                display: flex;
+                flex-direction: column;
+                .WhoWeAre__content__title {
+                    font-size: 3.2rem;
+                    line-height: 4rem;
+                    letter-spacing: -0.5px;
+                    color: #FFFFFF;
+                    text-align: left;
+                    margin: 0;
+                }
+                .WhoWeAre__content__body {
+                    text-align: left;
+                    line-height: 3.2rem;
+                    padding: 4rem 0;
+                }
+            }
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 2px;
+                height: 80px;
+                background: #F1B2CC;
+                border-radius: 1px;
+            }
+        }
+        .WhoWeAre__footer__number {
+            padding: 8rem;
+            .WhoWeAre__number {
+                margin: 0;
+                font-size: 20rem;
+                line-height: 18rem;
+                text-align: center;
+                color: #FFFFFF;
+            }
+            .WhoWeAre__number__content {
+                margin: 0;
+                font-size: 2.4rem;
+                line-height: 3rem;
+                font-style: normal;
+                font-weight: 700;
+                text-align: center;
+                letter-spacing: -0.2px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.Services {
+    width: 100%;
+    height: var(--heightServices);
+    background-image: url('../images/ServicesBg.svg');
+    background-color: #fff;
+    .Headline {
+        .Headline__content {
+            .Headline__content__tagline, .taglineContent {
+                color:#5468E7;
+            }
+            .Headline__content__para {
+                color:#232340;
+            }
+        }
+    }
 }
