@@ -134,6 +134,32 @@ function App() {
               <img src={images.rightHover} alt="Right Arrow" />
             </div>
           </div>
+          <div className="Services__Card">
+            <div className='Services__Card_Box'>
+              <img src={images.ServicesIcon1} alt="" className="Services__Card__icon" />
+              <span className="Services__Card__name">
+                Strategy
+              </span>
+              </div>
+            <div className='Services__Card_Box Services__Card__Current'>
+              <img src={images.ServicesIcon2} alt="" className="Services__Card__icon" />
+              <span className="Services__Card__name">
+                Branding
+              </span>
+              </div>
+            <div className='Services__Card_Box'>
+              <img src={images.ServicesIcon3} alt="" className="Services__Card__icon" />
+              <span className="Services__Card__name">
+                Interactive
+              </span>
+              </div>
+            <div className='Services__Card_Box'>
+              <img src={images.ServicesIcon4} alt="" className="Services__Card__icon" />
+              <span className="Services__Card__name">
+                Communicate
+              </span>
+              </div>
+          </div>
         </div>
       </div>
     </div>
