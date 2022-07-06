@@ -191,6 +191,253 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="Works">
+        <div className='grid'>
+          <div className="Headline">
+            <img src={images.logoSymbol} alt="" className="Headline__logo" />
+              <div className="Headline__content">
+                <div className="Headline__content__tagline">
+                  <span className="taglineNumber">
+                  04.
+                  </span> 
+                  <span className="taglineContent">
+                    Famous Projects
+                  </span>
+                </div>
+                <h2 className="Headline__content__para">
+                  Our Partnerships
+                </h2>
+                <p className="Work__Headline__content">
+                  Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.
+                </p>
+              </div>
+              <button className="button-primary">
+                <span className="Recent-Works">
+                  Contact Us
+                </span>
+              </button>
+          </div>
+          <div className="Works__featuredWork">
+            <img src={images.FeatureWork} alt="" className='featuredWorkIMG' />
+            <div className="Works__featuredWork__main">
+              <div className="featuredWork__main__feature">
+                Featured Product
+              </div>
+              <div className="featuredWork__main__content">
+                <div className="featuredWork__main__content__title">
+                  Sapiens: The Free Character Builder App.
+                </div>
+                <div className="featuredWork__main__content__para">
+                  Beautiful library of modular, component-based character illustrations free to use for all your personal or client projects.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='Works__PortFolio__Box'>
+            <div className="Works__PortFolio Works__PortFolio__Right">
+              <h2 className="PortFolio__title">
+                Bento Vol.2
+              </h2>
+              <div className="PortFolio__Box">
+                <img src={images.PortFolio1} alt="" className="PortFolio__Box__img" />
+                <img src={images.rightHover} alt="" className="PortFolio__Box__Arrow" />
+              </div>
+              <p className="PortFolio__content">
+                Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.
+              </p>
+            </div>
+            <div className="Works__PortFolio Works__PortFolio2">
+              <h2 className="PortFolio__title">
+                Bento 3D Illustration
+              </h2>
+              <div className="PortFolio__Box">
+                <img src={images.PortFolio2} alt="" className="PortFolio__Box__img" />
+                <img src={images.rightHover} alt="" className="PortFolio__Box__Arrow" />
+              </div>
+              <p className="PortFolio__content">
+                Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.
+              </p>
+            </div>
+            <div className="Works__PortFolio Works__PortFolio3 Works__PortFolio__Right">
+              <h2 className="PortFolio__title">
+                Bento Vol.3
+              </h2>
+              <div className="PortFolio__Box">
+                <img src={images.PortFolio3} alt="" className="PortFolio__Box__img" />
+                <img src={images.rightHover} alt="" className="PortFolio__Box__Arrow" />
+              </div>
+              <p className="PortFolio__content">
+                Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.
+              </p>
+            </div>
+            <div className="Works__PortFolio Works__PortFolio4">
+              <h2 className="PortFolio__title">
+                Sapiens: Man
+              </h2>
+              <div className="PortFolio__Box">
+                <img src={images.PortFolio4} alt="" className="PortFolio__Box__img" />
+                <img src={images.rightHover} alt="" className="PortFolio__Box__Arrow" />
+              </div>
+              <p className="PortFolio__content">
+                Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="CTA">
+        <img src={images.HeroBG} alt="" className="CTA__maskImg" />
+        <img src={images.PhoneIllustration} alt="" className="CTA__phoneImg" />
+        <div className="CTAContent">
+          <div className="Headline">
+            <img src={images.logoSymbol} alt="" className="Headline__logo" />
+            <div className="Headline__content">
+              <div className="Headline__content__tagline">
+                <span className="taglineNumber">
+                  05.
+                </span> 
+                <span className="taglineContent">
+                  Call to action
+                </span>
+              </div>
+              <h2 className="Headline__content__para">
+                We Are Looking for Talented Designers
+              </h2>
+              <button className="button-primary">
+                <span className="Recent-Works">
+                  Apply Now
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="Job">
+        <div className="grid">
+          <div className="Headline">
+            <img src={images.logoSymbol} alt="" className="Headline__logo" />
+            <div className="Headline__content">
+              <div className="Headline__content__tagline">
+                <span className="taglineNumber">
+                05.
+                </span> 
+                <span className="taglineContent">
+                  We are hiring
+                </span>
+              </div>
+              <h2 className="Headline__content__para">
+                Jobs
+              </h2>
+              <p className="Work__Headline__content">
+                Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.
+              </p>
+              <div className="ScrollDown">
+                <img src={images.rightHover} alt="" />
+                <span>Available jobs</span>
+              </div>
+            </div>
+          </div>
+          <div className="JobsCard">
+            <div className="JobCard__Box">
+              <div className="JobCard__content">
+                <h2 className="JobName">
+                  Graphic Designer
+                </h2>
+                <span className="YearExperienceJob">
+                  2 years experience
+                </span>
+              </div>
+            </div>
+            <div className="JobCard__Box JobCard__Box__Current">
+              <div className="JobCard__content">
+                <h2 className="JobName">
+                  Visual Designer
+                </h2>
+                <span className="YearExperienceJob">
+                  2 years experience
+                </span>
+              </div>
+            </div>
+            <div className="JobCard__Box">
+              <div className="JobCard__content">
+                <h2 className="JobName">
+                  Art Director
+                </h2>
+                <span className="YearExperienceJob">
+                  2 years experience
+                </span>
+              </div>
+            </div>
+            <div className="JobCard__Box">
+              <div className="JobCard__content">
+                <h2 className="JobName">
+                  Web Designer
+                </h2>
+                <span className="YearExperienceJob">
+                  2 years experience
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="Footer">
+        <div className="Footer__Contact">
+          <div className="Footer__Contact__Top">
+            <img src={images.logoSymbol} alt="" className="Headline__logo" />
+            <p>👋  Say hello</p>
+            <h2>
+              A design team building a curated marketplace for UI designers.
+            </h2>
+          </div>
+          <div className="Footer__Contact__Bottom">
+            <div className="Footer__Contact__BottomLeft">
+              Let’s talk about your next project
+            </div>
+            <div className="Footer__Contact__BottomRight">
+              <img src={images.SpeachBubble} alt="" />
+              <p>Invest in your designs today!</p>
+            </div>
+          </div>
+        </div>
+        <div className="Footer__Content">
+          <div className="grid">
+            <div className="Footer__Content__Top">
+              <div className="Nav__logo">
+                <img src={images.logo} alt="Logo" />
+              </div>
+              <p className="Footer__Content__Top__para">
+                Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.
+              </p>
+              <ul className="Nav__menu">
+                <li className="Nav__menu-item">About</li>
+                <li className="Nav__menu-item">Work</li>
+                <li className="Nav__menu-item">Services</li>
+                <li className="Nav__menu-item">Jobs</li>
+              </ul>
+            </div>
+            <div className="Footer__Content__Social">
+              <span className="Footer__Content__Social__Left">
+                © 2020, UI8 LLC.
+              </span>
+              <div className="Footer__Content__Social__Right">
+                <span>Follow us</span>
+                <ul className="Social__ListIcon">
+                  <li className="Social__Icon">
+                    <img src={images.FbIcon} alt="" />
+                  </li>
+                  <li className="Social__Icon">
+                    <img src={images.YtbIcon} alt="" />
+                  </li>
+                  <li className="Social__Icon">
+                    <img src={images.InstaIcon} alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

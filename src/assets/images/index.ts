@@ -15,6 +15,16 @@ const images = {
     ServicesIcon3: require('./ServicesIcon3.svg').default,
     ServicesIcon4: require('./ServicesIcon4.svg').default,
     Phone: require('./phone.png'),
+    FeatureWork: require('./featureWorksIMG.png'),
+    PortFolio1: require('./PortFolio1.png'),
+    PortFolio2: require('./PortFolio2.png'),
+    PortFolio3: require('./PortFolio3.png'),
+    PortFolio4: require('./PortFolio4.png'),
+    PhoneIllustration: require('./phoneillustration.png'),
+    SpeachBubble: require('./SpeachBubble.svg').default,
+    FbIcon: require('./Fb.svg').default,
+    YtbIcon: require('./Ytb.svg').default,
+    InstaIcon: require('./Insta.svg').default,
 };
 
 export default images;
