@@ -14,6 +14,7 @@ const images = {
     ServicesIcon2: require('./ServicesIcon2.svg').default,
     ServicesIcon3: require('./ServicesIcon3.svg').default,
     ServicesIcon4: require('./ServicesIcon4.svg').default,
+    Phone: require('./phone.png'),
 };
 
 export default images;

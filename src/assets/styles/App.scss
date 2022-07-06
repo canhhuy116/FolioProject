@@ -9,7 +9,7 @@
     height: 6.4rem;   
     /* color/dark */
     border: 0px;
-    background: #5468E7;
+    background: var(--primaryColor);
     border-radius: 8px;
 
     &:hover {
@@ -21,6 +21,27 @@
         font-size: 1.8rem;
         left: 24.44%;
         right: 24.44%;
+        color: #FFFFFF;
+    }
+}
+
+.Number {
+    padding: 8rem;
+    .Number__head {
+        margin: 0;
+        font-size: 20rem;
+        line-height: 18rem;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .Number__content {
+        margin: 0;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: -0.2px;
         color: #FFFFFF;
     }
 }
@@ -118,7 +139,7 @@
             }
 
             .Nav__menu-item:first-child {
-                color: #5468E7;
+                color: var(--primaryColor);
             }
             
             .Nav__notify {
@@ -326,26 +347,6 @@
                 border-radius: 1px;
             }
         }
-        .WhoWeAre__footer__number {
-            padding: 8rem;
-            .WhoWeAre__number {
-                margin: 0;
-                font-size: 20rem;
-                line-height: 18rem;
-                text-align: center;
-                color: #FFFFFF;
-            }
-            .WhoWeAre__number__content {
-                margin: 0;
-                font-size: 2.4rem;
-                line-height: 3rem;
-                font-style: normal;
-                font-weight: 700;
-                text-align: center;
-                letter-spacing: -0.2px;
-                color: #FFFFFF;
-            }
-        }
     }
 }
 
@@ -358,7 +359,7 @@
     .Headline {
         .Headline__content {
             .Headline__content__tagline, .taglineContent {
-                color:#5468E7;
+                color:var(--primaryColor);
             }
             .Headline__content__para {
                 color:#232340;
@@ -384,7 +385,7 @@
             .Services__Card__name {
                 margin: 0;
                 margin-top: 4rem;
-                color: #5468E7;
+                color: var(--primaryColor);
             }
             &:hover:not(.Services__Card__Current) {
                 cursor: pointer;
@@ -393,12 +394,77 @@
         }
         .Services__Card__Current {
             border-radius: 48px ;
-            background: #5468E7;
+            background: var(--primaryColor);
             box-sizing: content-box;
             .Services__Card__name {
                 margin: 0;
                 margin-top: 3.3rem;
                 color: #FFFFFF;
+            }
+        }
+    }
+    .Services__Achievement {
+        width: 100%;
+        background-image: url('../images/Oval.svg');
+        background-repeat: no-repeat;
+        margin-top: 29rem;
+        position: relative;
+        .ImgPhone {
+            position: absolute;
+            top: -15rem;
+            left: -13.5rem;
+            width: auto;
+            height: auto;
+        }
+        .Services__Achievement__content {     
+            // width: 60%; 
+            margin-left: 50%;   
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;     
+            .Achievement__Headline {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+    
+                .Achievement__Headline__Head {
+                    display: flex;
+                    align-items: center;
+                    .Headline__content__tagline {
+                        margin-left: 8rem;
+                        .taglineNumber {
+                            font-weight: 600;
+                            line-height: 2.4rem;
+                        }
+                        .taglineContent {
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 24px;
+                            margin-left: 2.4rem;
+                            color: #232340;
+                        }
+                    }
+                }
+                .Headline__content__para {
+                    text-align: left;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 40px;
+                    /* or 125% */
+                    color: #000;
+                    letter-spacing: -0.5px;
+                }
+            }
+            .Number {
+                padding-left: 0;
+                .Number__head {
+                    color: var(--primaryColor);
+                    line-height: 24rem;
+                }
+                .Number__content {
+                    color: var(--black)
+                }
             }
         }
     }

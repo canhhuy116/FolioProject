@@ -99,11 +99,11 @@ function App() {
                   <span className="Recent-Works">Contact Us</span>
                 </button>
               </div>
-              <div className="WhoWeAre__footer__number">
-                <h1 className="WhoWeAre__number">
+              <div className="Number">
+                <h1 className="Number__head">
                   28
                 </h1>
-                <h6 className="WhoWeAre__number__content">
+                <h6 className="Number__content">
                   Bigest Branding
                 </h6>
               </div>
@@ -159,6 +159,35 @@ function App() {
                 Communicate
               </span>
               </div>
+          </div>
+          <div className="Services__Achievement">
+            <img src={images.Phone} alt="Phone" className='ImgPhone' />
+            <div className="Services__Achievement__content">
+              <div className="Achievement__Headline">
+                <div className="Achievement__Headline__Head">
+                  <img src={images.logoSymbol} alt=""/>
+                  <div className="Headline__content__tagline">
+                    <span className="taglineNumber">
+                    03.
+                    </span> 
+                    <span className="taglineContent">
+                      Achievement
+                    </span>
+                  </div>
+                </div>
+                <h2 className="Headline__content__para">
+                  A design team building a curated marketplace for UI designers.
+                </h2>
+              </div>
+              <div className="Number">
+                <h1 className="Number__head">
+                  68
+                </h1>
+                <h6 className="Number__content">
+                  😎    Successful Projects
+                </h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
