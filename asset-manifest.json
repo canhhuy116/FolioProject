@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FolioProject/static/css/main.ef681842.css",
+    "main.css": "/FolioProject/static/css/main.2830a8e5.css",
     "main.js": "/FolioProject/static/js/main.7f166419.js",
     "static/js/787.43d88a3b.chunk.js": "/FolioProject/static/js/787.43d88a3b.chunk.js",
     "static/media/whoweareIMG.png": "/FolioProject/static/media/whoweareIMG.899e6f792e62ce0990f4.png",
@@ -36,12 +36,12 @@
     "static/media/left-normal.svg": "/FolioProject/static/media/left-normal.24906896bc94621e82232120fd353c07.svg",
     "static/media/CTABg.svg": "/FolioProject/static/media/CTABg.9249464dc3a14b604f87.svg",
     "static/media/Oval.svg": "/FolioProject/static/media/Oval.781eb9cf0b694165e069.svg",
-    "main.ef681842.css.map": "/FolioProject/static/css/main.ef681842.css.map",
+    "main.2830a8e5.css.map": "/FolioProject/static/css/main.2830a8e5.css.map",
     "main.7f166419.js.map": "/FolioProject/static/js/main.7f166419.js.map",
     "787.43d88a3b.chunk.js.map": "/FolioProject/static/js/787.43d88a3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef681842.css",
+    "static/css/main.2830a8e5.css",
     "static/js/main.7f166419.js"
   ]
 }
