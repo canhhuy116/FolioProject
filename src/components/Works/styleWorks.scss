@@ -1,0 +1,247 @@
+.Works__PortFolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .PortFolio__title {
+        text-align: left;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        /* identical to box height, or 120% */
+
+        letter-spacing: -0.4px;
+
+        /* color/dark */
+
+        color: #232340;
+    }
+    .PortFolio__Box {
+        position: relative;
+        width: 37rem;
+        height: 38rem;
+        background: #E8BEFF;
+        border-radius: 24px;
+        display: flex;
+        justify-content: flex-start;
+        .PortFolio__Box__img {
+            margin-right: 26%;
+            align-self: center;
+        }
+        .PortFolio__Box__Arrow {
+            position: absolute;
+            bottom: 3.2rem;
+            right: -3.2rem;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .PortFolio__content {
+        text-align: left;
+        width: 37rem;   
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        color: #606060;
+    }
+}
+
+.Works {
+    width: 100%;
+    // height: var(--heightWorks);
+    background-color: var(--white);
+    background-image: url('../../assets/images/lines.svg');
+    .Headline {
+        padding: 0;
+        .Headline__content {
+            margin-left: 18rem;
+            .Headline__content__tagline {
+                color:var(--primaryColor);
+                .taglineContent {
+                    color:var(--primaryColor);
+                }
+            }
+            .Headline__content__para {
+                color:#232340;
+                font-weight: 700;
+                font-size: 8.4rem;
+                line-height: 10rem;
+                letter-spacing: -1px;
+            }
+            .Work__Headline__content {
+                text-align: left;
+                line-height: 3.2rem;
+                width: 60%;
+                margin-top: 4rem;
+            }
+        }
+    }
+    .Works__featuredWork {
+        width: 100%;
+        position: relative;
+        background-image: url('../../assets/images/featureWorksBg.png');
+        background-repeat: no-repeat;
+        background-size: 45.5%;
+        background-position: right;
+        .featureWork__Box {
+            position: absolute;
+            top: 18rem;
+            right: 33.6rem;
+            width: 46.3%;
+            .featuredWorkIMG {
+                position: relative;
+                background: #D1ECFD;
+                border-radius: 2.4rem;
+                padding: 1rem 4rem;
+                img {
+                    width: 100%;
+                }
+                .ArrowRight {
+                    z-index: 1;
+                    position: absolute;
+                    top: 25%;
+                    right: -3.2rem;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                .viewButton {
+                    position: absolute;
+                    bottom: 3.2rem;
+                    left: 3.2rem;
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+        .Works__featuredWork__main {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 22rem;
+            .featuredWork__main__feature {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                color: #FFFFFF;
+                padding: 11px 22px;
+                border-radius: 20px;
+                background-color: #908CFF;
+            }
+            .featuredWork__main__content {
+                display: flex;
+                flex-direction: column;
+                width: 39%;
+                align-items: flex-start;
+                text-align: left;
+                .featuredWork__main__content__title {
+                    margin: 24px 0;
+                    font-weight: 700;
+                    font-size: 4rem;
+                    line-height: 4.8rem;
+                    /* or 120% */
+                    color: #000;
+                    letter-spacing: -0.4px;
+                }
+                .featuredWork__main__content__para {
+                    margin-top: 8px;
+                    line-height: 3.2rem;
+                    font-weight: 400;
+                    width: 45%;
+                }
+            }
+        }
+    }
+    .Works__PortFolio__Box {
+        // position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 25rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .Works__PortFolio__Right {
+            align-self: flex-end;
+            .PortFolio__Box {
+                justify-content: flex-end;
+            }
+        }
+        .Works__PortFolio2 {
+            // position: absolute;
+            // top: 70rem;
+            margin-top: -35rem;
+            align-self: flex-start;
+            .PortFolio__Box {
+                width: 47rem;
+                height: 50rem;
+                background: #FFCE79;
+                .PortFolio__Box__img {
+                    margin-right: 0;
+                    margin-left: 10%;
+                }
+            }
+        }
+        .Works__PortFolio3 {
+            margin-top: -2rem;
+            margin-right: 10rem;
+            .PortFolio__Box {
+                width: 47rem;
+                height: 51rem;
+                background: #D1ECFD;
+                justify-content: center;
+                .PortFolio__Box__img {
+                    margin-right: 0;
+                }
+            }
+        }
+        .Works__PortFolio4 {
+            margin-top: -50rem;
+            margin-left: 10rem;
+            .PortFolio__Box {
+                width: 36.6rem;
+                height: 51rem;
+                background: #FFADD0;
+                justify-content: center;
+                .PortFolio__Box__img {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Responsive */
+/*Tablet*/
+@media (min-width: 740px) and  (max-width: 1024px) {
+    .Works {
+        .Headline {
+            .Headline__content {
+                margin-left: 12rem;
+            }
+        }
+        .Works__featuredWork {
+            .featureWork__Box {
+                right: 28rem;
+                top: 23rem;
+            }
+            .Works__featuredWork__main {                
+                .featuredWork__main__content {
+                    .featuredWork__main__content__para {
+                        margin-top: 8px;
+                        line-height: 3.2rem;
+                        font-weight: 400;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+/*Mobile*/
+@media (min-width: 0) and (max-width: 739px) {
+
+}

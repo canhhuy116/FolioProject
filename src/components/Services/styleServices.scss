@@ -1,0 +1,161 @@
+.Services {
+    width: 100%;
+    // height: var(--heightServices);
+    background-color: var(--white);
+    background-image: url('../../assets/images/ServicesBg.svg');
+    background-color: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289), 100%);
+    background-repeat: no-repeat;
+    padding-bottom: 20rem;
+    .Headline {
+        .Headline__content {
+            .Headline__content__tagline, .taglineContent {
+                color:var(--primaryColor);
+            }
+            .Headline__content__para {
+                color:#232340;
+            }
+        }
+    }
+    .Services__Card {
+        display: flex;
+        background-color: var(--white);
+        border: 3px solid #FFFFFF;
+        border-radius: 48px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        justify-content: space-around;
+        margin-top: 14rem;
+        .Services__Card_Box {
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            border-radius: 48px;
+            padding: 14rem 5.6rem;
+            background-color: var(--white);
+            
+            .Services__Card__name {
+                margin: 0;
+                margin-top: 4rem;
+                color: var(--primaryColor);
+            }
+            &:hover:not(.Services__Card__Current) {
+                cursor: pointer;
+                background-color: #838FDD;
+            }
+        }
+        .Services__Card_Box--active {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            box-sizing: content-box;
+            .Services__Card__Current {
+                z-index: 1;
+                position: absolute;
+                top: -4rem;
+                left: -2.5rem;
+                border-radius: 48px ;
+                padding: 20rem 8.3rem;
+                background: var(--primaryColor);
+                align-self: stretch;
+                .Services__Card__name {
+                    margin: 0;
+                    margin-top: 3.3rem;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .Services__Achievement {
+        width: 100%;
+        background-image: url('../../assets/images/Oval.svg');
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: 40%;
+        // background-position-x: 10rem;
+        margin-top: 29rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ImgPhone {
+            width: 85%;
+            margin-left: -10rem;
+            margin-bottom: 5rem;
+            img {
+                width: 100%;
+            }
+        }
+        .Services__Achievement__content {     
+            // width: 60%; 
+            // margin-left: 50%;   
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;     
+            .Achievement__Headline {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+    
+                .Achievement__Headline__Head {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        padding: 6px;
+                        border-radius: 8px;
+                        background-color: var(--primaryColor);
+                    }
+                    .Headline__content__tagline {
+                        margin-left: 8rem;
+                        .taglineNumber {
+                            font-weight: 600;
+                            line-height: 2.4rem;
+                        }
+                        .taglineContent {
+                            font-weight: 600;
+                            font-size: 1.8rem;
+                            line-height: 2.4rem;
+                            margin-left: 2.4rem;
+                            color: #232340;
+                        }
+                    }
+                }
+                .Headline__content__para {
+                    text-align: left;
+                    font-weight: 700;
+                    font-size: 3.2rem;
+                    line-height: 4rem;
+                    /* or 125% */
+                    color: #000;
+                    letter-spacing: -0.5px;
+                }
+            }
+            .Number {
+                padding-left: 0;
+                .Number__head {
+                    color: var(--primaryColor);
+                    line-height: 24rem;
+                }
+                .Number__content {
+                    color: var(--black)
+                }
+            }
+        }
+    }
+}
+
+/* Responsive */
+/*Tablet*/
+@media (min-width: 740px) and  (max-width: 1024px) {
+    .Services {
+        .Services__Achievement {
+            .ImgPhone {
+                width: 130%;
+                margin-left: -13rem;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}
+/*Mobile*/
+@media (min-width: 0) and (max-width: 739px) {
+
+}

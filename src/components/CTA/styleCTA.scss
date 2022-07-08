@@ -1,0 +1,57 @@
+.CTA {
+    width: 100%;
+    // height: var(--heightCTA);
+    background-color: var(--white);
+    background-image: url('../../assets/images/CTABg.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 85.5% 100%;
+    position: relative;
+    padding-bottom: 30rem;
+
+    .CTA__maskImg {
+        position: absolute;
+        width: 35%;
+        top: 17.5rem;
+        right: 5rem;
+        img {
+            width: 100%;
+        }
+    }
+    .CTA__phoneImg {
+        position: absolute;
+        top: 17.5rem;
+        left: 20rem;
+        width: 38%;
+        img {
+            width: 100%;
+        }
+    }
+    .CTAContent {
+        position: relative;
+        margin: 0 20rem 0 23.5rem;
+        .Headline {
+            padding-top: 25rem;
+            .Headline__logo {
+                background-color: #C897E4;
+            }
+            .Headline__content {
+                margin-right: 8.5rem;
+                .Headline__content__tagline {
+                    color: #ffff;
+                }
+                .Headline__content__para {
+                    width: 37rem;
+                }
+                .button-primary {
+                    width: 20rem;
+                    margin-top: 5rem;
+                    background-color: var(--white);
+                    .Recent-Works {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+}
