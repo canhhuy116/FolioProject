@@ -27,8 +27,13 @@ function WhoWeArePage() {
                 </h2>
               </div>
               <div className="Headline__Arrow">
-                <img src={images.leftNormal} alt="Left Arrow" />
-                <img src={images.rightHover} alt="Right Arrow" />
+                <div className="Headline__Arrow__Box">
+                  <img src={images.leftNormal} alt="Left Arrow" />
+                  <img src={images.rightHover} alt="Right Arrow" />
+                </div>
+                {/* Mobile */}
+                <span className="CurrentYearMobile">2020</span>
+                <img src={images.PathStroke} alt="" className='DownIconMobile' />
               </div>
             </div>
             <div className="WhoWeAre__body">

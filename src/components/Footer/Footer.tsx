@@ -14,7 +14,10 @@ function FooterPage() {
           </div>
           <div className="Footer__Contact__Bottom">
             <div className="Footer__Contact__BottomLeft">
-              Let’s talk about your next project
+              <p>Let’s talk about your next project</p>
+              <button className="button-primary">
+                <span className="Recent-Works">Contact Us</span>
+              </button>
             </div>
             <div className="Footer__Contact__BottomRight">
               <img src={images.SpeachBubble} alt="" />

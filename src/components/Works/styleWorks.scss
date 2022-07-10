@@ -28,6 +28,7 @@
         .PortFolio__Box__img {
             margin-right: 26%;
             align-self: center;
+            width: 130%;
         }
         .PortFolio__Box__Arrow {
             position: absolute;
@@ -183,6 +184,7 @@
                 .PortFolio__Box__img {
                     margin-right: 0;
                     margin-left: 10%;
+                    width: 70%;
                 }
             }
         }
@@ -196,6 +198,7 @@
                 justify-content: center;
                 .PortFolio__Box__img {
                     margin-right: 0;
+                    width: 73.8%;
                 }
             }
         }
@@ -209,6 +212,7 @@
                 justify-content: center;
                 .PortFolio__Box__img {
                     margin: 0;
+                    width: 100%;
                 }
             }
         }
@@ -216,8 +220,43 @@
 }
 
 /* Responsive */
+@media (min-width: 1025px) and (max-width: 1250px) {
+    .Works .Works__featuredWork .featureWork__Box {
+        top: 23rem;
+        right: 25.6rem;
+    }
+    .Works {
+        .Works__PortFolio__Box {
+            .PortFolio__Box {
+                width: 30rem;
+                height: 33rem;
+            }
+            .Works__PortFolio2 {
+                margin-top: -30rem;
+                .PortFolio__Box {
+                    width: 35rem;
+                    height: 38rem;
+                }
+            }
+            .Works__PortFolio3 {
+                margin-top: -10rem;
+                .PortFolio__Box {
+                    width: 35rem;
+                    height: 38rem;
+                }
+            }
+            .Works__PortFolio4 {
+                margin-top: -35rem;
+                .portfolio__Box {
+                    width: 32.6rem;
+                    height: 40rem;
+                }
+            }
+        }
+    }
+}
 /*Tablet*/
-@media (min-width: 740px) and  (max-width: 1024px) {
+@media (min-width: 850px) and  (max-width: 1024px) {
     .Works {
         .Headline {
             .Headline__content {
@@ -240,9 +279,144 @@
                 }
             }
         }
+        .Works__PortFolio__Box {
+            .PortFolio__Box {
+                width: 35rem;
+                height: 37rem;
+            }
+            .Works__PortFolio2 {
+                margin-top: -30rem;
+                .PortFolio__Box {
+                    width: 36rem;
+                    height: 40rem;
+                }
+            }
+            .Works__PortFolio3 {
+                margin-top: -10rem;
+                .PortFolio__Box {
+                    width: 39rem;
+                    height: 43rem;
+                }
+            }
+            .Works__PortFolio4 {
+                margin-top: -39rem;
+                margin-left: 5rem;
+                .portfolio__Box {
+                    width: 32.6rem;
+                    height: 45rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 740px) and  (max-width: 849px) {
+    .Works .Works__featuredWork .featureWork__Box {
+        top: 25rem;
+        right: 25.6rem;
+    }
+    .Works {
+        .Works__PortFolio__Box {
+            .PortFolio__Box {
+                width: 33rem;
+                height: 35rem;
+            }
+            .Works__PortFolio2 {
+                margin-top: -30rem;
+                .PortFolio__Box {
+                    width: 35rem;
+                    height: 38rem;
+                }
+            }
+            .Works__PortFolio3 {
+                margin-top: -10rem;
+                .PortFolio__Box {
+                    width: 35rem;
+                    height: 38rem;
+                }
+            }
+            .Works__PortFolio4 {
+                margin-top: -35rem;
+                margin-left: 5rem;
+                .portfolio__Box {
+                    width: 32.6rem;
+                    height: 40rem;
+                }
+            }
+        }
     }
 }
 /*Mobile*/
 @media (min-width: 0) and (max-width: 739px) {
-
+    .Works {
+        position: relative;
+        padding-bottom: 80px;
+        .Headline {
+            .Headline__content {
+                margin-left: 0;
+                .Headline__content__para {
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+            }
+            .button-primary {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                max-width: 311px;
+                margin: 0 auto;
+            }
+        }
+        $paddingSize: 20px;
+        .Works__featuredWork {
+            background-image: unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .featureWork__Box {
+                position: unset;
+                width: 100%;
+                max-width: 311px;
+                padding-bottom: $paddingSize;
+                .featuredWorkIMG {
+                    background: #FFBA79;
+                    border-radius: 17.0667px;
+                    .ArrowRight, .viewButton {
+                        display: none;
+                    }
+                }
+            }
+            .Works__featuredWork__main  {
+                padding: 0;
+                .featuredWork__main__feature {
+                    margin-left: 25px;
+                    padding: 8px 16px;
+                    margin-top: calc(-3*$paddingSize);
+                }
+                .featuredWork__main__content {
+                    display: none;
+                }
+            }
+        }
+        .Works__PortFolio__Box {
+            padding-top: 50px;
+            .Works__PortFolio {
+                margin: 0;
+                width: 100%;
+                .PortFolio__Box {
+                    width: 100%;
+                    justify-content: center;
+                    .PortFolio__Box__img {
+                        margin: 0;
+                        width: 90%;
+                    }
+                    .PortFolio__Box__Arrow {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }

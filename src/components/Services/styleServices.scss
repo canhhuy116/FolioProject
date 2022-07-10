@@ -40,13 +40,18 @@
             left: 0;
             width: 100%;
             margin-top: 0;
+            .Services__Card_Box, .Services__Card__Current {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
         }
 
         .Services__Card_Box {
             flex: 1;
             height: 480px;
             flex-direction: column;
-            // align-items: center;
             border-radius: 48px;
             background-color: var(--white);
             
@@ -160,8 +165,13 @@
 }
 
 /* Responsive */
+@media (min-width: 1025px) and (max-width: 1250px) {
+    .Services .Services__Achievement .ImgPhone {
+        margin-left: -6rem;
+    }
+}
 /*Tablet*/
-@media (min-width: 740px) and  (max-width: 1024px) {
+@media (min-width: 850px) and  (max-width: 1024px) {
     .Services {
         .Services__Achievement {
             .ImgPhone {
@@ -172,7 +182,71 @@
         }
     }
 }
+
+@media (min-width: 740px) and  (max-width: 849px) {
+    .Services .Services__Achievement .ImgPhone {
+        margin-left: -6rem;
+    }
+}
 /*Mobile*/
 @media (min-width: 0) and (max-width: 739px) {
-
+    .Services {
+        .LeftArrow {
+            display: none;
+        }
+        .Services__Cards {
+            .Services__Card {
+                display: none;
+            }
+        }
+        .Services__Card.content {
+            display: block;
+            position: unset;
+            flex-direction: column;
+            background-color: unset;
+            border: unset;
+            border-radius: unset;
+            box-shadow: unset;
+            .Services__Card_Box, .Services__Card__Current {
+                flex: unset;
+                height: 190px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin: 12px 0;
+                border-radius: 32px;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+                .Services__Card__name {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin: 0;
+                }
+            }
+        }
+        .Services__Achievement {
+            margin-top: 80px;
+            flex-direction: column-reverse;
+            background-size: 80%;
+            background-position: bottom center;
+            .Services__Achievement__content .Achievement__Headline .Achievement__Headline__Head {
+                img {
+                   display: none;
+               }
+               .Headline__content__tagline {
+                margin: 0;
+               }
+            }
+            .Number {
+                padding: 0;
+            }
+            .ImgPhone {
+                width: 115%;
+                margin: 0;
+                margin-bottom: -10%;
+            }
+        }
+    }
 }

@@ -26,6 +26,8 @@ const images = {
     YtbIcon: require('./Ytb.svg').default,
     InstaIcon: require('./Insta.svg').default,
     viewButton: require('./viewButton.svg').default,
+    burgerIcon: require('./burgerIcon.svg').default,
+    PathStroke: require('./Path(Stroke).svg').default,
 };
 
 export default images;

@@ -18,6 +18,10 @@ function HeaderPage() {
           <button className="button-primary">
             <span className="Recent-Works">Contact Us</span>
           </button>
+          {/* Mobile */}
+          <div className="Nav__BurgerIcon">
+            <img src={images.burgerIcon} alt="" />
+          </div>
         </div>
         <div className='grid'>
           <div className="Header__Container">

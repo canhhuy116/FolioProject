@@ -56,7 +56,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    padding: 6.4rem 15rem 6.4rem 6.4rem;
+                    padding: 6.4rem 8rem 6.4rem 6.4rem;
                     .JobName {
                         width: 25rem;
                         margin: 0;
@@ -91,6 +91,54 @@
                     .JobName {
                         color: var(--white);
                     }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 740px) and  (max-width: 849px) {
+    .Job {
+        .grid {
+            .Headline {
+                .Headline__content {
+                    margin-right: 7rem;
+                    .Headline__content__para {
+                        width: 39rem;
+                    }
+                    .Work__Headline__content {
+                        width: 30rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Mobile*/
+@media (min-width: 0) and (max-width: 739px) {
+    .Job {
+        padding: unset;
+        .grid {
+            flex-direction: column;
+            .Headline {
+                align-items: flex-start;
+                margin-top: 50px;
+                .Headline__content {
+                    margin: unset;
+                    .Headline__content__para {
+                        width: unset;
+                    }
+                    .ScrollDown {
+                        display: none;
+                    }
+                }
+            }
+            .JobsCard {
+                margin-top: 48px;
+                .JobCard__Box {
+                    width: 100%;
                 }
             }
         }

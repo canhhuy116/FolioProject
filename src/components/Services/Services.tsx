@@ -21,7 +21,7 @@ function ServicesPage() {
             </h2>
           </div>
           <div className="Headline__Arrow">
-            <img src={images.leftNormal1} alt="Left Arrow" />
+            <img src={images.leftNormal1} alt="Left Arrow" className='LeftArrow' />
             <img src={images.rightHover} alt="Right Arrow" />
           </div>
         </div>
