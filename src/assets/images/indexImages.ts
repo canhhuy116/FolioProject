@@ -1,35 +1,63 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable global-require */
+import logo from './logo.svg';
+import HeaderBG from './HeaderBg.svg';
+import HeroImg from './hero img.png';
+import HeroBG from './heroBg.svg';
+import CircleArrow from './CircleArrow.svg';
+import shape1 from './shape1.svg';
+import logoSymbol from './logoSymbol.svg';
+import rightHover from './right-hover.svg';
+import leftNormal from './left-normal.svg';
+import whoweareIMG from './whoweareIMG.png';
+import leftNormal1 from './left-normal(1).svg';
+import ServicesIcon1 from './ServicesIcon1.svg';
+import ServicesIcon2 from './ServicesIcon2.svg';
+import ServicesIcon3 from './ServicesIcon3.svg';
+import ServicesIcon4 from './ServicesIcon4.svg';
+import Phone from './phone.png';
+import FeatureWork from './featureWorksIMG.svg';
+import PortFolio1 from './PortFolio1.png';
+import PortFolio2 from './PortFolio2.png';
+import PortFolio3 from './PortFolio3.png';
+import PortFolio4 from './PortFolio4.png';
+import PhoneIllustration from './phoneillustration.png';
+import SpeachBubble from './SpeachBubble.svg';
+import FbIcon from './Fb.svg';
+import YtbIcon from './Ytb.svg';
+import InstaIcon from './Insta.svg';
+import viewButton from './viewButton.svg';
+import burgerIcon from './burgerIcon.svg';
+import PathStroke from './Path(Stroke).svg';
+
 const images = {
-  logo: require('./logo.svg').default,
-  HeaderBG: require('./HeaderBg.svg').default,
-  HeroImg: require('./hero img.png'),
-  HeroBG: require('./heroBg.svg').default,
-  CircleArrow: require('./CircleArrow.svg').default,
-  shape1: require('./shape1.svg').default,
-  logoSymbol: require('./logoSymbol.svg').default,
-  rightHover: require('./right-hover.svg').default,
-  leftNormal: require('./left-normal.svg').default,
-  whoweareIMG: require('./whoweareIMG.png'),
-  leftNormal1: require('./left-normal(1).svg').default,
-  ServicesIcon1: require('./ServicesIcon1.svg').default,
-  ServicesIcon2: require('./ServicesIcon2.svg').default,
-  ServicesIcon3: require('./ServicesIcon3.svg').default,
-  ServicesIcon4: require('./ServicesIcon4.svg').default,
-  Phone: require('./phone.png'),
-  FeatureWork: require('./featureWorksIMG.svg').default,
-  PortFolio1: require('./PortFolio1.png'),
-  PortFolio2: require('./PortFolio2.png'),
-  PortFolio3: require('./PortFolio3.png'),
-  PortFolio4: require('./PortFolio4.png'),
-  PhoneIllustration: require('./phoneillustration.png'),
-  SpeachBubble: require('./SpeachBubble.svg').default,
-  FbIcon: require('./Fb.svg').default,
-  YtbIcon: require('./Ytb.svg').default,
-  InstaIcon: require('./Insta.svg').default,
-  viewButton: require('./viewButton.svg').default,
-  burgerIcon: require('./burgerIcon.svg').default,
-  PathStroke: require('./Path(Stroke).svg').default,
+  logo,
+  HeaderBG,
+  HeroImg,
+  HeroBG,
+  CircleArrow,
+  shape1,
+  logoSymbol,
+  rightHover,
+  leftNormal,
+  whoweareIMG,
+  leftNormal1,
+  ServicesIcon1,
+  ServicesIcon2,
+  ServicesIcon3,
+  ServicesIcon4,
+  Phone,
+  FeatureWork,
+  PortFolio1,
+  PortFolio2,
+  PortFolio3,
+  PortFolio4,
+  PhoneIllustration,
+  SpeachBubble,
+  FbIcon,
+  YtbIcon,
+  InstaIcon,
+  viewButton,
+  burgerIcon,
+  PathStroke,
 };
 
 export default images;
