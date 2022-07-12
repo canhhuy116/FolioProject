@@ -1,7 +1,6 @@
 .WhoWeAre {
   position: relative;
   width: 100%;
-  // height: var(--heightWhoWeAre);
   background: #232340;
   background-image: url('../../assets/images/line.svg');
   background-repeat: no-repeat;
@@ -10,36 +9,45 @@
   .WhoWeAre__Shape3d {
     width: 100%;
     height: 100%;
+
     .shape3dIMG {
       position: absolute;
       top: -4rem;
       right: 0;
       width: 55.7%;
+
       img {
         width: 100%;
       }
     }
+
     .grid {
       position: relative;
     }
+
     .Content-Title__Number {
       color: var(--colorText);
     }
+
     .Content-Title__Caption {
-      color: #ffffff;
+      color: #fff;
     }
+
     .CurrentYearMobile {
       display: none;
     }
+
     .DownIconMobile {
       display: none;
     }
+
     .WWA-Body {
       width: 100%;
       margin-top: 9.4rem;
       margin-bottom: 17rem;
       display: flex;
       justify-content: space-between;
+
       .TimeLine {
         margin: 0;
         margin-bottom: 6rem;
@@ -53,7 +61,8 @@
         .CurrentYear {
           position: relative;
           color: var(--white);
-          &:after {
+
+          &::after {
             content: '';
             display: block;
             position: absolute;
@@ -64,7 +73,8 @@
             background: var(--white);
             margin-top: 7px;
           }
-          &:before {
+
+          &::before {
             content: '';
             display: block;
             position: absolute;
@@ -77,20 +87,24 @@
           }
         }
       }
+
       .WWA-Body__Img {
         position: relative;
         width: 83%;
         top: 0;
         right: 0;
+
         img {
           width: 100%;
         }
       }
     }
   }
+
   .WWA-Content {
     display: flex;
     justify-content: space-between;
+
     .Content-Box {
       position: relative;
       display: flex;
@@ -99,24 +113,28 @@
       justify-content: flex-start;
       padding-left: 20rem;
       padding-right: 2rem;
+
       .Content-WWA {
         display: flex;
         flex-direction: column;
+
         .Content-WWA__Title {
           font-size: 3.2rem;
           line-height: 4rem;
           letter-spacing: -0.5px;
-          color: #ffffff;
+          color: #fff;
           text-align: left;
           margin: 0;
         }
+
         .Content-WWA__Text {
           text-align: left;
           line-height: 3.2rem;
           padding: 4rem 0;
         }
       }
-      &:after {
+
+      &::after {
         content: '';
         display: block;
         position: absolute;
@@ -131,35 +149,44 @@
   }
 }
 
-/*Mobile*/
-@media (min-width: 0) and (max-width: 739px) {
+$MaxWidthMobile: 739px;
+
+/* Mobile */
+@media (min-width: 0) and (max-width: $MaxWidthMobile) {
   .WhoWeAre {
     .WhoWeAre__Shape3d {
       .shape3dIMG {
         display: none;
       }
+
       .WWA-Body {
         margin-bottom: 56px;
+
         .TimeLine {
           display: none;
         }
+
         .WWA-Body__Img {
           width: 100%;
         }
       }
+
       .WWA-Content {
         flex-direction: column;
         align-items: flex-start;
+
         .Content-Box {
           padding: 0;
-          &:after {
+
+          &::after {
             display: none;
           }
         }
+
         .Number {
           align-self: center;
           border-radius: 260px;
-          box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 10%);
           margin-top: 50px;
         }
       }

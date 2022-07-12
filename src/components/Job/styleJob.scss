@@ -2,20 +2,24 @@
   width: 100%;
   background-color: var(--white);
   background-image: url('../../assets/images/ServicesBg.svg');
-  background-color: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289), 100%);
   padding-bottom: 10rem;
+
   .grid {
     display: flex;
     justify-content: space-between;
-    .Content__tagline {
+
+    .Content-Title {
       color: var(--primaryColor);
-      .taglineContent {
+
+      .Content-Title__Caption {
         color: var(--primaryColor);
       }
     }
+
     .Headline {
       .Content {
         margin-right: 10rem;
+
         .Content__Text {
           width: 45rem;
           color: #232340;
@@ -24,39 +28,46 @@
           line-height: 13rem;
           letter-spacing: -1.2px;
         }
+
         .Job-Text {
           text-align: left;
           line-height: 3.2rem;
           width: 37rem;
         }
+
         .ScrollDown {
           margin-top: 5rem;
           display: flex;
           align-items: center;
+
           span {
             margin-left: 1.5rem;
           }
         }
       }
     }
+
     .JobCards {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
       margin-top: 12.8rem;
+
       .JobCard {
-        background-color: #ffffff;
+        background-color: #fff;
         border-radius: 40px;
         margin-bottom: 2rem;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
         justify-content: space-between;
         align-items: center;
+
         .JobCard-Box {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           padding: 6.4rem 8rem 6.4rem 6.4rem;
+
           .JobCard__JobName {
             width: 25rem;
             margin: 0;
@@ -67,26 +78,18 @@
             color: #232340;
             text-align: left;
             position: relative;
-            // &:after {
-            //     content: '2';
-            //     position: absolute;
-            //     padding: 8px 16px;
-            //     background: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
-            //     top: 0;
-            //     right: -5rem;
-            //     font-size: 1.4rem;
-            //     line-height: 1.8rem;
-            //     border-radius: 20px;
-            // }
           }
+
           .JobCard__YearExp {
             text-align: left;
             margin-top: 2rem;
           }
         }
       }
+
       .JobCard__Current {
         background: #232340;
+
         .JobCard-Box {
           .JobCard__JobName {
             color: var(--white);
@@ -97,15 +100,20 @@
   }
 }
 
-@media (min-width: 740px) and (max-width: 849px) {
+$MaxWidthMiniTablet: 849px;
+$MaxWidthMobile: 739px;
+
+@media (min-width: ($MaxWidthMobile + 1)) and (max-width: $MaxWidthMiniTablet) {
   .Job {
     .grid {
       .Headline {
         .Content {
           margin-right: 7rem;
+
           .Content__Text {
             width: 39rem;
           }
+
           .Job-Text {
             width: 30rem;
           }
@@ -115,27 +123,34 @@
   }
 }
 
-/*Mobile*/
-@media (min-width: 0) and (max-width: 739px) {
+/* Mobile */
+@media (min-width: 0) and (max-width: $MaxWidthMobile) {
   .Job {
     padding: unset;
+
     .grid {
       flex-direction: column;
+
       .Headline {
         align-items: flex-start;
         margin-top: 50px;
+
         .Content {
           margin: unset;
+
           .Content__Text {
             width: unset;
           }
+
           .ScrollDown {
             display: none;
           }
         }
       }
+
       .JobCards {
         margin-top: 48px;
+
         .JobCard {
           width: 100%;
         }
