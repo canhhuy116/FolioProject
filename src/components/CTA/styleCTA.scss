@@ -1,0 +1,188 @@
+.CTA {
+  width: 100%;
+  background-color: var(--white);
+  background-image: url('../../assets/images/CTABg.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 85.5% 100%;
+  position: relative;
+  padding-bottom: 30rem;
+
+  .CTA__maskImg {
+    position: absolute;
+    width: 35%;
+    top: 17.5rem;
+    right: 5rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .CTA__phoneImg {
+    position: absolute;
+    top: 17.5rem;
+    left: 20rem;
+    width: 38%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .CTA-Content {
+    position: relative;
+    margin: 0 20rem 0 23.5rem;
+
+    .Headline {
+      padding-top: 25rem;
+
+      .Headline__logo {
+        background-color: #c897e4;
+      }
+
+      .Content {
+        margin-right: 8.5rem;
+
+        .Content-Title {
+          color: #ffff;
+        }
+
+        .Content__Text {
+          width: 37rem;
+        }
+
+        .button--primary {
+          width: 20rem;
+          margin-top: 5rem;
+          background-color: var(--white);
+
+          .Recent-Works {
+            color: var(--primaryColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+$MaxWidthMiniDesktop: 1250px;
+$MaxWidthTablet: 1024px;
+$MaxWidthMiniTablet: 849px;
+$MaxWidthMobile: 739px;
+
+/* Mini Desktop */
+@media (min-width: ($MaxWidthTablet + 1)) and (max-width: $MaxWidthMiniDesktop) {
+  .CTA {
+    .CTA__maskImg {
+      top: 24.5rem;
+    }
+
+    .CTA__phoneImg {
+      top: 24.5rem;
+      left: 13rem;
+    }
+
+    .CTA-Content {
+      .Headline {
+        .Content {
+          margin-right: -1.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* Tablet */
+@media (min-width: ($MaxWidthMiniTablet + 1)) and (max-width: $MaxWidthTablet) {
+  .CTA {
+    .CTA__maskImg {
+      top: 22.5rem;
+    }
+
+    .CTA__phoneImg {
+      top: 21.5rem;
+      left: 17rem;
+    }
+
+    .CTA-Content {
+      .Headline {
+        .Content {
+          margin-right: 3.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: ($MaxWidthMobile + 1)) and (max-width: $MaxWidthMiniTablet) {
+  .CTA {
+    .CTA__maskImg {
+      top: 24.5rem;
+    }
+
+    .CTA__phoneImg {
+      top: 24.5rem;
+      left: 15rem;
+    }
+
+    .CTA-Content {
+      .Headline {
+        .Content {
+          margin-right: -2.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media (min-width: 0) and (max-width: $MaxWidthMobile) {
+  .CTA {
+    margin: 30% 0;
+    background-size: contain;
+    padding: unset;
+
+    .CTA__maskImg {
+      right: 0;
+      top: 3%;
+    }
+
+    .CTA__phoneImg {
+      top: 3%;
+      left: 10%;
+    }
+
+    .CTA-Content {
+      margin: 0;
+      padding-left: 40%;
+
+      .Headline {
+        padding: 0;
+        justify-content: flex-end;
+
+        .Headline__logo {
+          display: none;
+        }
+
+        .Content {
+          margin: 0;
+          align-items: flex-start;
+
+          .Content-Title {
+            margin: 0;
+          }
+
+          .Content__Text {
+            width: 213px;
+          }
+
+          .button--primary {
+            width: 15rem;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

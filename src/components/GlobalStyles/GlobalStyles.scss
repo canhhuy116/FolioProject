@@ -2,39 +2,241 @@
 @import url('http://fonts.cdnfonts.com/css/sf-pro-display');
 
 :root {
-    --white: #fff;
-    --colorText: #8B8B8B;
-    --heightHeader: 1024px;
-    --heightWhoWeAre: 1710px;
-    --distancePrimary: 13.5rem;
-    --black: #000;
-    --heightServices: 2124px;
-    --primaryColor: #5468E7;
-    --heightWorks: 3232px;
-    --heightCTA: 976px;
+  --white: #fff;
+  --colorText: #8b8b8b;
+  --distancePrimary: 13.5rem;
+  --black: #000;
+  --primaryColor: #5468e7;
 }
 
 * {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
+/* Variable font size and line height text */
+
+$fontSize: 1.8rem;
+$lineHeight: 1.4rem;
+
 html {
-    font-size: 62.5%;
-    color: var(--colorText);
-    background-color: var(--white);
-    box-sizing: border-box;
+  font-size: 62.5%;
+  color: var(--colorText);
+  background-color: var(--white);
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'SF Pro Display', sans-serif;                                  
-    font-size: 1.8rem;
-    line-height: 1.4rem;
-    text-rendering: optimizeSpeed;
-    text-align: center;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-rendering: optimizespeed;
+  text-align: center;
 }
 
+.button--primary {
+  width: 18rem;
+  height: 6.4rem;
+  border: 0;
+  background: var(--primaryColor);
+  border-radius: 8px;
+
+  &:hover {
+    background: #7483e5;
+    cursor: pointer;
+  }
+
+  .Recent-Works {
+    font-weight: bold;
+    left: 24.44%;
+    right: 24.44%;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+}
+
+.Number {
+  padding: 8rem;
+
+  .Number__head {
+    margin: 0;
+    font-size: 20rem;
+    line-height: 18rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  .Number__content {
+    margin: 0;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #fff;
+  }
+}
+
+.Headline {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12.8rem;
+
+  .Headline__logo {
+    padding: 6px;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    align-self: flex-start;
+    background-color: var(--primaryColor);
+    border-radius: 8px;
+  }
+
+  .Content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .Content-Title {
+      font-weight: 600;
+      line-height: 2.4rem;
+      font-style: normal;
+      margin-bottom: 2.4rem;
+      color: var(--primaryColor);
+
+      .Content-Title__Caption {
+        margin-left: 2.4rem;
+      }
+    }
+
+    .Content__Text {
+      font-weight: 700;
+      font-size: 6.4rem;
+      line-height: 7.2rem;
+      margin: 0;
+      letter-spacing: -0.5px;
+      color: #fff;
+      width: 66rem;
+      text-align: left;
+    }
+  }
+
+  .Arrow-Btn__Box {
+    margin-top: 5.4rem;
+
+    img {
+      width: auto;
+      height: auto;
+      top: 0;
+      left: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/* Responsive */
+
+$widthContainerDesktop: 1170px;
+
 .grid {
-    width: 1170px;
-    max-width: 100%;
-    margin:0 auto;
+  width: 100%;
+  max-width: $widthContainerDesktop;
+  margin: 0 auto;
+}
+
+/* Declare Variable for responsive */
+
+$widthContainerMiniDesktop: 1000px;
+$widthContainerTablet: 811px;
+$widthContainerMiniTablet: 700px;
+$widthContainerMobile: 311px;
+$MaxWidthMiniDesktop: 1250px;
+$MaxWidthTablet: 1024px;
+$MaxWidthMiniTablet: 849px;
+$MaxWidthMobile: 739px;
+
+/* Mini Desktop */
+@media (min-width: ($MaxWidthTablet + 1)) and (max-width: $MaxWidthMiniDesktop) {
+  .grid {
+    max-width: $widthContainerMiniDesktop;
+  }
+}
+
+/* Tablet */
+@media (min-width: ($MaxWidthMiniTablet + 1)) and (max-width: $MaxWidthTablet) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    max-width: $widthContainerTablet;
+  }
+}
+
+@media (min-width: ($MaxWidthMobile + 1)) and (max-width: $MaxWidthMiniTablet) {
+  html {
+    font-size: 45%;
+  }
+
+  .grid {
+    max-width: $widthContainerMiniTablet;
+  }
+}
+
+/* Mobile */
+@media (min-width: 0) and (max-width: $MaxWidthMobile) {
+  html {
+    font-size: 45%;
+  }
+
+  .grid {
+    max-width: $widthContainerMobile;
+  }
+
+  .Headline {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .Headline__logo {
+      display: none;
+    }
+
+    .Content {
+      .Content__Text {
+        width: 80%;
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+
+    .Arrow-Btn {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin-top: 30px;
+
+      .Arrow-Btn__Box {
+        margin: unset;
+      }
+
+      .CurrentYearMobile {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        color: #fff;
+      }
+
+      .DownIconMobile {
+        display: inline-block;
+      }
+    }
+  }
 }

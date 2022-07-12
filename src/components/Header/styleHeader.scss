@@ -1,0 +1,251 @@
+.Header {
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: url('../../assets/images/HeaderBg.svg');
+  padding-bottom: 25rem;
+
+  .Navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6.4rem 7.2rem 0;
+
+    .Nav__logo {
+      padding: 12px 0;
+    }
+
+    .Navbar-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      padding: 0;
+      margin: 0;
+      font-weight: 600;
+
+      .Navbar-menu__item {
+        list-style: none;
+        line-height: 2.5rem;
+        padding: 1.5rem 3.2rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .Navbar-menu__item:first-child {
+        color: var(--primaryColor);
+      }
+
+      .Nav__notify {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 3px 8px;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        color: var(--white);
+        background: linear-gradient(180deg, #3a8fff 0%, #0837ae 100%);
+      }
+    }
+
+    .button-primary {
+      background: #232340;
+
+      &:hover {
+        background: #3a3a64;
+        cursor: pointer;
+      }
+    }
+
+    .Nav__BurgerIcon {
+      display: none;
+    }
+  }
+
+  .Header-Container {
+    position: relative;
+    margin-top: 9.4rem;
+    height: 100%;
+    display: flex;
+
+    .HeroBG {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 49%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .HeroImg {
+      position: absolute;
+      top: 8rem;
+      right: 6rem;
+      width: 61%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .HeroContent {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+
+      .HeroContent-main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .HeroContent__title {
+          margin: 0;
+          text-align: start;
+          font-weight: 700;
+          font-size: 8.4rem;
+          line-height: 10rem;
+          letter-spacing: -1px;
+          color: #232340;
+        }
+
+        .HeroContent__para {
+          width: 90%;
+          text-align: start;
+          font-weight: 400;
+          margin: 4rem 0 4.8rem;
+          line-height: 3.2rem;
+          color: #606060;
+        }
+      }
+    }
+
+    .ScrollDownIcon {
+      position: absolute;
+      bottom: -32%;
+      left: 0;
+      height: auto;
+      width: auto;
+      vertical-align: bottom;
+      object-fit: cover;
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
+/* Responsive */
+
+$MaxWidthMiniDesktop: 1250px;
+$MaxWidthTablet: 1024px;
+$MaxWidthMiniTablet: 849px;
+$MaxWidthMobile: 739px;
+
+/* Mini Desktop */
+@media (min-width: ($MaxWidthTablet + 1)) and (max-width: $MaxWidthMiniDesktop) {
+  .Header .Header-Container .ScrollDownIcon {
+    bottom: -19%;
+  }
+}
+
+/* Tablet */
+@media (min-width: ($MaxWidthMiniTablet + 1)) and (max-width: $MaxWidthTablet) {
+  .Header {
+    .Header-Container {
+      .HeroBG {
+        width: 52%;
+      }
+
+      .HeroImg {
+        width: 64%;
+      }
+
+      .HeroContent {
+        width: 40%;
+
+        .HeroContent-main {
+          .HeroContent__para {
+            width: 80%;
+          }
+        }
+      }
+
+      .ScrollDownIcon {
+        bottom: -23%;
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media (min-width: 0) and (max-width: $MaxWidthMobile) {
+  .Header {
+    padding-bottom: 85%;
+    margin-bottom: 64px;
+    position: relative;
+    overflow-x: hidden;
+
+    .Navigation {
+      padding: 52px 32px 0;
+
+      .Navbar-menu,
+      .button--primary {
+        display: none;
+      }
+
+      .Nav__BurgerIcon {
+        display: block;
+      }
+    }
+
+    .Header-Container {
+      margin-top: 44px;
+      position: unset;
+
+      .HeroContent {
+        z-index: 1;
+        width: 100%;
+
+        .HeroContent-main {
+          .HeroContent__title {
+            font-size: 7.4rem;
+            line-height: 8rem;
+          }
+
+          .HeroContent__para {
+            width: 75%;
+            margin: 24px 0;
+          }
+        }
+      }
+
+      .ScrollDownIcon {
+        display: none;
+      }
+
+      .HeroBG {
+        top: unset;
+        bottom: 0;
+        width: 76%;
+        right: -18%;
+      }
+
+      .HeroImg {
+        top: unset;
+        bottom: 6%;
+        right: -7%;
+        width: 90%;
+      }
+    }
+  }
+}
