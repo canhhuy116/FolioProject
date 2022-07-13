@@ -1,6 +1,28 @@
-# Getting Started with Create React App
+# React Typescript Polio Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple project for Beginner
+
+## Usage
+
+Make sure you have [Nodejs](https://nodejs.org/en/download/) and [Git](https://git-scm.com/downloads) installed.
+
+Clone the Git Repository:
+
+```
+git clone https://github.com/canhhuy116/FolioProject.git
+```
+
+- Or you can click on Code -> Download ZIP if you don't have Git installed.
+
+Install the packages:
+
+```
+npm i
+```
+
+## Design Template
+
+You can see the blueprints at [FolioAgency](<https://www.figma.com/file/qEqaWFeSGTVDWrFepRiBT0/Folio-Agency-1.0-(Community)?node-id=0%3A321>)
 
 ## Available Scripts
 
