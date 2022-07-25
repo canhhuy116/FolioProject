@@ -20,6 +20,7 @@
 
   .Services__Cards {
     position: relative;
+    margin-top: 14rem;
   }
 
   .Card__icon {
@@ -27,13 +28,18 @@
   }
 
   .Card {
+    $heightCard: 480px;
+
     display: flex;
     background-color: var(--white);
     border: 3px solid #fff;
     border-radius: 48px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 10%);
     justify-content: space-around;
-    margin-top: 14rem;
+
+    .Card__Box {
+      height: $heightCard;
+    }
 
     &.content {
       position: absolute;
@@ -52,7 +58,7 @@
 
       .Card__Box {
         flex: 1;
-        height: 480px;
+        height: $heightCard;
         flex-direction: column;
         border-radius: 48px;
         background-color: var(--white);
